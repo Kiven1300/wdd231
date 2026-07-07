@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">KG logo</title>
+  <desc id="desc">Circular logo with initials KG</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#17324d"/>
+      <stop offset="1" stop-color="#2e5b86"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#g)"/>
+  <circle cx="60" cy="60" r="52" fill="none" stroke="#ffffff" stroke-width="4"/>
+  <text x="60" y="72" text-anchor="middle" font-size="42" font-family="Roboto, Arial, sans-serif" font-weight="700" fill="#ffffff">KG</text>
+</svg>

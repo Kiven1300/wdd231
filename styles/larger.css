@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+  #menu-button {
+    display: none;
+  }
+  #navigation ul {
+    display: flex;
+  }
+
+  #navigation li {
+    flex: 1;
+  }
+
+  #navigation a {
+    text-align: center;
+    border-bottom: none;
+    border-right: 1px solid #17324d;
+  }
+
+  #navigation li:last-child a {
+    border-right: none;
+  }
+
+  .main-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-links {
+    margin-bottom: 0;
+  }
+}
