@@ -37,7 +37,7 @@ const courses = [
     certificate: 'Web and Computer Programming',
     description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
     technology: ['C#'],
-    completed: false
+    completed: true
   },
   {
     subject: 'WDD',

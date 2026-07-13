@@ -1,0 +1,23 @@
+{
+  "family_name": "Gonzalez",
+  "move_in_date": "2026-07-01",
+  "number_of_people": 3,
+  "visited_by_bishopric": false,
+  "family_members": [
+    {
+      "name": "Carlos Gonzalez",
+      "gender": "Male",
+      "birthdate": "1985-04-12"
+    },
+    {
+      "name": "Laura Gonzalez",
+      "gender": "Female",
+      "birthdate": "1987-09-23"
+    },
+    {
+      "name": "Daniel Gonzalez",
+      "gender": "Male",
+      "birthdate": "2014-01-18"
+    }
+  ]
+}
