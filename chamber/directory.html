@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore local businesses and organizations that are members of the Xochimilco Chamber of Commerce.">
+  <meta name="author" content="Kevin González Álvarez">
+  <meta property="og:title" content="Xochimilco Chamber of Commerce Directory">
+  <meta property="og:description" content="Discover local businesses, services, and organizations that support the economic community of Xochimilco.">
+  <meta property="og:image" content="https://kiven1300.github.io/wdd231/chamber/images/social-preview.webp">
+  <meta property="og:url" content="https://kiven1300.github.io/wdd231/chamber/directory.html">
+  <title>Xochimilco Chamber of Commerce Directory</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+</head>
+<body class="directory-page">
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Xochimilco Chamber of Commerce logo" width="60" height="60">
+      <span>Xochimilco Chamber of Commerce</span>
+    </a>
+    <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+  </header>
+  <nav id="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html" class="active">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Business Directory</h1>
+    <div class="view-buttons">
+      <button id="grid-view" type="button" aria-pressed="true">Grid</button>
+      <button id="list-view" type="button" aria-pressed="false">List</button>
+    </div>
+    <section id="members" class="member-grid" aria-label="Directory members"></section>
+  </main>
+  <footer>
+    <div class="contact-info">
+      <strong>Xochimilco Chamber of Commerce</strong>
+      <p>Centro Histórico de Xochimilco, CDMX</p>
+      <p>info@xochimilcochamber.org</p>
+      <p>+52 55 1234 5678</p>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/Kiven1300" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <img src="images/github.svg" alt="" width="36" height="36">
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <img src="images/linkedin.svg" alt="" width="36" height="36">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook profile">
+        <img src="images/facebook.svg" alt="" width="36" height="36">
+      </a>
+    </div>
+    <div class="development-info">
+      <p>WDD 231 Class Project</p>
+      <p>Kevin González Álvarez</p>
+      <p>&copy; <span id="current-year"></span> Xochimilco Chamber of Commerce</p>
+      <p id="last-modified"></p>
+    </div>
+  </footer>
+</body>
+</html>

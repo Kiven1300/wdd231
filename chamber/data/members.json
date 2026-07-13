@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Restaurante Lina Xochimilco",
+      "address": "Avenida 5 de Mayo 82, Xochimilco, Ciudad de México, C.P. 16090",
+      "phone": "+52 55 5676 9523",
+      "website": "https://www.facebook.com/Lina.Restaurante",
+      "image": "Lina_xochimilco.webp",
+      "membershipLevel": 3,
+      "description": "A well-known local restaurant serving Mexican cuisine in a warm and welcoming setting near central Xochimilco."
+    },
+    {
+      "name": "Chantico",
+      "address": "Azalea 39, Xaltocan, Xochimilco, Ciudad de México, C.P. 16090",
+      "phone": "+52 55 5653 2887",
+      "website": "https://linktr.ee/chantico_xochimilco",
+      "image": "Chantico.webp",
+      "membershipLevel": 2,
+      "description": "A traditional Xochimilco restaurant known for regional Mexican dishes, breakfast, and a welcoming family atmosphere."
+    },
+    {
+      "name": "Fonda Tepepan",
+      "address": "Camino Real a Xochimilco No. 1, Santa María Tepepan, Xochimilco, Ciudad de México, C.P. 16020",
+      "phone": "+52 55 5676 3686",
+      "website": "https://www.google.com/maps/@19.271719,-99.1339378,17z?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D",
+      "image": "Fonda_tepepan.webp",
+      "membershipLevel": 2,
+      "description": "A casual Mexican restaurant serving traditional breakfast, lunch, and brunch dishes in the historic Tepepan area."
+    },
+    {
+      "name": "Viveros Lucas",
+      "address": "Camino a Nativitas s/n, Col. El Rodeo, Barrio Xaltocan, Xochimilco, Ciudad de México, C.P. 16090",
+      "phone": "+52 55 1800 5570",
+      "website": "https://viverolucas.com",
+      "image": "Viveros_Luca.webp",
+      "membershipLevel": 1,
+      "description": "A local nursery with more than twenty years of experience offering plants, fruit trees, grass, pots, and garden products."
+    },
+    {
+      "name": "Viveros México",
+      "address": "Calle Madre Selva, Colonia Xaltocan, Xochimilco, Ciudad de México, C.P. 16090",
+      "phone": "+52 55 4512 0496",
+      "website": "https://viverosmexico.com",
+      "image": "Viveros_Mexico.webp",
+      "membershipLevel": 1,
+      "description": "A Xochimilco nursery that supplies ornamental plants, fruit trees, garden materials, and professional landscaping services."
+    },
+    {
+      "name": "Jardinería Viveros Xochimilco",
+      "address": "Ayecalt núm. 38, La Asunción, Xochimilco, Ciudad de México",
+      "phone": "+52 55 2829 4040",
+      "website": "https://www.jardineriaviveros.com",
+      "image": "Jardineria_xochimilco.webp",
+      "membershipLevel": 3,
+      "description": "A gardening company specializing in garden construction, remodeling, plant sales, landscaping, and professional tree pruning services."
+    },
+    {
+      "name": "Embarcadero Nativitas Xochimilco",
+      "address": "Av. Hermenegildo Galeana s/n, Santa María Nativitas, Xochimilco, Ciudad de México, C.P. 16450",
+      "phone": "+52 55 3119 2697",
+      "website": "https://mexicocity.cdmx.gob.mx/venues/embarcadero-nuevo-nativitas/?lang=en",
+      "image": "Embarcadero_nativitas.webp",
+      "membershipLevel": 2,
+      "description": "One of Xochimilco’s traditional trajinera docks, offering canal tours, live music, local food, and cultural experiences throughout the year."
+    }
+  ]
+}
