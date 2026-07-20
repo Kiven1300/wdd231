@@ -3,15 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Placeholder page for the WDD 231 Chamber project.">
+  <meta
+    name="description"
+    content="Official home page for the Xochimilco Chamber of Commerce, featuring local events, weather, business spotlights, and membership opportunities."
+  >
   <meta name="author" content="Kevin González Álvarez">
-  <title>Chamber | Coming Soon</title>
+  <meta property="og:title" content="Xochimilco Chamber of Commerce">
+  <meta
+    property="og:description"
+    content="Discover Xochimilco businesses, local events, chamber membership opportunities, and community resources."
+  >
+  <meta
+    property="og:image"
+    content="https://kiven1300.github.io/wdd231/chamber/images/social-preview.webp"
+  >
+  <meta
+    property="og:url"
+    content="https://kiven1300.github.io/wdd231/chamber/"
+  >
+  <title>Xochimilco Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/home.js" defer></script>
 </head>
-<body>
+<body class="home-page">
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Xochimilco Chamber of Commerce logo" width="60" height="60">
+      <span>Xochimilco Chamber of Commerce</span>
+    </a>
+    <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+  </header>
+  <nav id="navigation">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
   <main>
-    <h1>Chamber Project - Coming Soon</h1>
-    <p>This page will contain the Chamber of Commerce project in upcoming weeks.</p>
-    <p><a href="../index.html">Back to Course Home Page</a></p>
+    <section class="hero">
+      <img
+        src="images/hero-xochimilco.webp"
+        alt="Colorful trajineras on the canals of Xochimilco"
+        width="1200"
+        height="600"
+      >
+      <div class="hero-content">
+        <h1>Xochimilco Chamber of Commerce</h1>
+        <p>
+          Connecting local businesses, residents, and visitors through
+          community events, economic development, and cultural heritage.
+        </p>
+        <a class="cta-button" href="join.html">Join the Chamber</a>
+      </div>
+    </section>
+
+    <div class="home-grid">
+      <section class="events">
+        <h2>Current Events</h2>
+
+        <article>
+          <h3>Local Business Networking Breakfast</h3>
+          <p>
+            Meet local entrepreneurs and business owners for a morning of
+            networking, collaboration, and chamber updates. Open to all
+            current and prospective members.
+          </p>
+        </article>
+
+        <article>
+          <h3>Xochimilco Cultural Weekend</h3>
+          <p>
+            Enjoy traditional food, local artisans, trajinera tours, and live
+            music while supporting the local economy and celebrating our
+            UNESCO-recognized heritage.
+          </p>
+        </article>
+
+        <article>
+          <h3>Sustainable Chinampas Workshop</h3>
+          <p>
+            Learn about traditional chinampa agriculture and sustainable
+            farming practices that have shaped Xochimilco for centuries.
+            Hosted by local growers and nurseries.
+          </p>
+        </article>
+      </section>
+
+      <section class="weather">
+        <h2>Weather in Xochimilco</h2>
+
+        <div class="current-weather">
+          <p>Current temperature: <strong><span id="current-temp">Loading…</span></strong></p>
+          <figure>
+            <img id="weather-icon" src="" alt="" width="80" height="80">
+            <figcaption id="weather-desc"></figcaption>
+          </figure>
+        </div>
+
+        <h3>Three-Day Forecast</h3>
+        <div id="forecast-cards"></div>
+      </section>
+
+      <section class="spotlights">
+        <h2>Business Spotlights</h2>
+        <div id="spotlight-cards"></div>
+      </section>
+    </div>
   </main>
+
+  <footer>
+    <div class="contact-info">
+      <strong>Xochimilco Chamber of Commerce</strong>
+      <p>Centro Histórico de Xochimilco, CDMX</p>
+      <p>info@xochimilcochamber.org</p>
+      <p>+52 55 1234 5678</p>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/Kiven1300" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <img src="images/github.svg" alt="" width="36" height="36">
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <img src="images/linkedin.svg" alt="" width="36" height="36">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook profile">
+        <img src="images/facebook.svg" alt="" width="36" height="36">
+      </a>
+    </div>
+    <div class="development-info">
+      <p>WDD 231 Class Project</p>
+      <p>Kevin González Álvarez</p>
+      <p>&copy; <span id="current-year"></span> Xochimilco Chamber of Commerce</p>
+      <p id="last-modified"></p>
+    </div>
+  </footer>
 </body>
 </html>

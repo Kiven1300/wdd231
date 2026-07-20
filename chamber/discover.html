@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Discover the history, culture, and statistics of Xochimilco — one of Mexico City's most iconic UNESCO World Heritage areas."
+  >
+  <meta name="author" content="Kevin González Álvarez">
+  <meta property="og:title" content="Discover Xochimilco | Chamber of Commerce">
+  <meta
+    property="og:description"
+    content="Explore the history, demographics, economy, and attractions of Xochimilco, CDMX."
+  >
+  <meta
+    property="og:image"
+    content="https://kiven1300.github.io/wdd231/chamber/images/social-preview.webp"
+  >
+  <meta
+    property="og:url"
+    content="https://kiven1300.github.io/wdd231/chamber/discover.html"
+  >
+  <title>Discover Xochimilco | Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
+</head>
+<body class="discover-page">
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Xochimilco Chamber of Commerce logo" width="60" height="60">
+      <span>Xochimilco Chamber of Commerce</span>
+    </a>
+    <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+  </header>
+  <nav id="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html" class="active">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Discover Xochimilco</h1>
+
+    <section class="discover-intro">
+      <p>
+        Xochimilco is one of the sixteen boroughs of Mexico City and one of its
+        most beloved destinations. Declared a UNESCO World Heritage Site in 1987,
+        it is home to the ancient chinampa agricultural system, colorful
+        trajineras, vibrant markets, and a rich indigenous heritage that
+        stretches back thousands of years.
+      </p>
+      <p id="visit-message" aria-live="polite"></p>
+    </section>
+
+    <div class="discover-grid">
+      <section class="discover-stats">
+        <h2>Quick Facts</h2>
+        <dl>
+          <dt>Population</dt>
+          <dd>~415,000 residents</dd>
+
+          <dt>Area</dt>
+          <dd>122 km²</dd>
+
+          <dt>UNESCO status</dt>
+          <dd>World Heritage Site since 1987</dd>
+
+          <dt>Chinampas</dt>
+          <dd>Over 20,000 hectares of lake zone</dd>
+
+          <dt>Annual visitors</dt>
+          <dd>More than 1 million per year</dd>
+
+          <dt>Primary language</dt>
+          <dd>Spanish (Nahuatl heritage)</dd>
+        </dl>
+      </section>
+
+      <section class="discover-attractions">
+        <h2>Top Attractions</h2>
+
+        <article class="attraction-card">
+          <h3>Trajinera Canal Tours</h3>
+          <p>
+            Glide through the ancient canal system on a colorful flat-bottomed
+            boat called a trajinera. Musicians, food vendors, and flower sellers
+            paddle alongside — an experience unlike anywhere else in the world.
+          </p>
+        </article>
+
+        <article class="attraction-card">
+          <h3>Mercado de Xochimilco</h3>
+          <p>
+            One of the most traditional markets in Mexico City, offering fresh
+            produce, flowers, handcrafts, street food, and goods sourced
+            directly from local chinampa farms.
+          </p>
+        </article>
+
+        <article class="attraction-card">
+          <h3>Chinampas (Floating Gardens)</h3>
+          <p>
+            The ancient Aztec agricultural technique of building fertile islands
+            on shallow lake beds. These living plots still produce flowers,
+            vegetables, and herbs for Mexico City markets today.
+          </p>
+        </article>
+
+        <article class="attraction-card">
+          <h3>Parroquia de San Bernardino de Siena</h3>
+          <p>
+            A stunning 16th-century Franciscan church and monastery at the heart
+            of the historic center, featuring a richly decorated altarpiece and
+            beautiful colonial architecture.
+          </p>
+        </article>
+
+        <article class="attraction-card">
+          <h3>Isla de las Muñecas</h3>
+          <p>
+            The famous "Island of the Dolls" — a unique and mysterious chinampa
+            covered in hundreds of old dolls, originally hung by caretaker
+            Julián Santana Barrera. Now a popular cultural landmark.
+          </p>
+        </article>
+
+        <article class="attraction-card">
+          <h3>Flower Festival (Feria de la Flor)</h3>
+          <p>
+            Held annually, this vibrant celebration showcases the flower-growing
+            tradition of Xochimilco with floral arrangements, competitions,
+            music, and artisan markets.
+          </p>
+        </article>
+      </section>
+
+      <section class="discover-economy">
+        <h2>Local Economy</h2>
+        <p>
+          Xochimilco's economy is deeply rooted in agriculture, tourism, and
+          small commerce. The chinampa system supports hundreds of family-run
+          farms producing flowers and vegetables. Tourism generated by the
+          canal network supports trajinera operators, restaurants, artisans,
+          and vendors year-round.
+        </p>
+        <p>
+          The Chamber of Commerce works to connect these businesses, promote
+          sustainable practices, and attract new investment that respects the
+          cultural and ecological heritage of the area.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <strong>Xochimilco Chamber of Commerce</strong>
+      <p>Centro Histórico de Xochimilco, CDMX</p>
+      <p>info@xochimilcochamber.org</p>
+      <p>+52 55 1234 5678</p>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/Kiven1300" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <img src="images/github.svg" alt="" width="36" height="36">
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <img src="images/linkedin.svg" alt="" width="36" height="36">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook profile">
+        <img src="images/facebook.svg" alt="" width="36" height="36">
+      </a>
+    </div>
+    <div class="development-info">
+      <p>WDD 231 Class Project</p>
+      <p>Kevin González Álvarez</p>
+      <p>&copy; <span id="current-year"></span> Xochimilco Chamber of Commerce</p>
+      <p id="last-modified"></p>
+    </div>
+  </footer>
+</body>
+</html>
