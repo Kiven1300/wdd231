@@ -1,50 +1,21 @@
-// Read URL parameters sent by the form (method="get") and display a summary
 const params = new URLSearchParams(window.location.search);
-const summaryList = document.querySelector('#summary-list');
 
-const labelMap = {
-  firstName: 'First Name',
-  lastName: 'Last Name',
-  orgTitle: 'Organizational Title',
-  email: 'Email Address',
-  phone: 'Phone Number',
-  businessName: 'Business / Organization',
-  membershipLevel: 'Membership Level',
-  timestamp: 'Application Date',
-};
+document.querySelector('#display-first-name').textContent =
+  params.get('first-name') || 'Not provided';
 
-const levelNames = {
-  np: 'NP Membership (Non-Profit)',
-  bronze: 'Bronze Membership',
-  silver: 'Silver Membership',
-  gold: 'Gold Membership',
-};
+document.querySelector('#display-last-name').textContent =
+  params.get('last-name') || 'Not provided';
 
-if (summaryList && params.toString()) {
-  Object.entries(labelMap).forEach(([key, label]) => {
-    const value = params.get(key);
-    if (!value) return;
+document.querySelector('#display-email').textContent =
+  params.get('email') || 'Not provided';
 
-    const dt = document.createElement('dt');
-    const dd = document.createElement('dd');
+document.querySelector('#display-phone').textContent =
+  params.get('phone') || 'Not provided';
 
-    dt.textContent = label;
+document.querySelector('#display-organization').textContent =
+  params.get('organization') || 'Not provided';
 
-    if (key === 'membershipLevel') {
-      dd.textContent = levelNames[value] ?? value;
-    } else if (key === 'timestamp') {
-      dd.textContent = new Date(value).toLocaleString('en-US', {
-        dateStyle: 'long',
-        timeStyle: 'short',
-      });
-    } else {
-      dd.textContent = value;
-    }
+const timestamp = params.get('timestamp');
 
-    summaryList.appendChild(dt);
-    summaryList.appendChild(dd);
-  });
-} else if (summaryList) {
-  // No params — user navigated here directly
-  document.querySelector('#application-summary').style.display = 'none';
-}
+document.querySelector('#display-timestamp').textContent =
+  timestamp ? new Date(timestamp).toLocaleString() : 'Not provided';

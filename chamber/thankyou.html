@@ -3,8 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Thank you for submitting your membership application to the Xochimilco Chamber of Commerce.">
+  <meta
+    name="description"
+    content="Thank you for submitting your chamber membership application. Review your submitted information for the Xochimilco Chamber of Commerce."
+  >
   <meta name="author" content="Kevin González Álvarez">
+  <meta property="og:title" content="Thank You | Xochimilco Chamber of Commerce">
+  <meta
+    property="og:description"
+    content="Application confirmation page for new chamber membership requests in Xochimilco."
+  >
+  <meta
+    property="og:image"
+    content="https://kiven1300.github.io/wdd231/chamber/images/social-preview.webp"
+  >
+  <meta
+    property="og:url"
+    content="https://kiven1300.github.io/wdd231/chamber/thankyou.html"
+  >
   <title>Thank You | Xochimilco Chamber of Commerce</title>
   <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,19 +51,33 @@
   </nav>
 
   <main>
-    <section class="thankyou-section">
-      <h1>Application Received!</h1>
+    <section class="thank-you">
+      <h1>Thank You for Joining</h1>
       <p>
-        Thank you for applying to the <strong>Xochimilco Chamber of Commerce</strong>.
-        We have received your application and will be in touch shortly.
+        Thank you for submitting your membership application. We will review your
+        information and contact you soon.
       </p>
 
-      <div class="application-summary" id="application-summary">
-        <h2>Your Submission Details</h2>
-        <dl id="summary-list"></dl>
-      </div>
+      <h2>Application Summary</h2>
+      <dl class="submitted-info">
+        <dt>First Name</dt>
+        <dd id="display-first-name"></dd>
 
-      <a class="cta-button" href="index.html">Return to Home</a>
+        <dt>Last Name</dt>
+        <dd id="display-last-name"></dd>
+
+        <dt>Email</dt>
+        <dd id="display-email"></dd>
+
+        <dt>Mobile Phone</dt>
+        <dd id="display-phone"></dd>
+
+        <dt>Business or Organization</dt>
+        <dd id="display-organization"></dd>
+
+        <dt>Application Date</dt>
+        <dd id="display-timestamp"></dd>
+      </dl>
     </section>
   </main>
 

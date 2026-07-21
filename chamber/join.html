@@ -51,186 +51,217 @@
   </nav>
 
   <main>
-    <h1>Join the Chamber</h1>
+    <h1>Join the Xochimilco Chamber of Commerce</h1>
 
     <div class="join-layout">
-
-      <!-- ── Membership Cards ── -->
-      <section class="membership-levels">
-        <h2>Membership Levels</h2>
-
-        <div class="level-cards">
-          <article class="level-card">
-            <h3>NP Membership</h3>
-            <p class="level-price">Free</p>
-            <p>
-              Available for non-profit organizations. Enjoy basic directory
-              listing and access to chamber newsletters and community events.
-            </p>
-            <ul>
-              <li>Directory listing</li>
-              <li>Monthly newsletter</li>
-              <li>Community event access</li>
-            </ul>
-          </article>
-
-          <article class="level-card">
-            <h3>Bronze Membership</h3>
-            <p class="level-price">$500 MXN / year</p>
-            <p>
-              Entry-level membership for small businesses. Get listed in the
-              directory and receive promotional support.
-            </p>
-            <ul>
-              <li>Directory listing</li>
-              <li>Monthly newsletter</li>
-              <li>1 social media mention per year</li>
-              <li>Networking events access</li>
-            </ul>
-          </article>
-
-          <article class="level-card level-card--silver">
-            <h3>Silver Membership</h3>
-            <p class="level-price">$1,500 MXN / year</p>
-            <p>
-              Ideal for established businesses looking for more visibility and
-              engagement with the Xochimilco business community.
-            </p>
-            <ul>
-              <li>All Bronze benefits</li>
-              <li>Spotlight on Home page</li>
-              <li>4 social media mentions per year</li>
-              <li>Priority event seating</li>
-            </ul>
-          </article>
-
-          <article class="level-card level-card--gold">
-            <h3>Gold Membership</h3>
-            <p class="level-price">$3,000 MXN / year</p>
-            <p>
-              Maximum visibility and engagement for businesses that want to
-              lead the local commerce community.
-            </p>
-            <ul>
-              <li>All Silver benefits</li>
-              <li>Featured spotlight (priority)</li>
-              <li>Monthly social media mentions</li>
-              <li>Logo on chamber homepage</li>
-              <li>Speaking opportunities at events</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <!-- ── Application Form ── -->
       <section class="join-form-section">
         <h2>Membership Application</h2>
 
-        <form
-          id="join-form"
-          method="get"
-          action="thankyou.html"
-          novalidate
-        >
-          <div class="form-group">
-            <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+        <form method="get" action="thankyou.html" class="join-form">
+          <label>
+            First Name
             <input
               type="text"
-              id="first-name"
-              name="firstName"
+              name="first-name"
+              title="Enter your first name"
               autocomplete="given-name"
               required
-              pattern="[A-Za-zÀ-ÿ\s\-]{2,}"
-              title="At least 2 letters"
             >
-          </div>
+          </label>
 
-          <div class="form-group">
-            <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+          <label>
+            Last Name
             <input
               type="text"
-              id="last-name"
-              name="lastName"
+              name="last-name"
+              title="Enter your last name"
               autocomplete="family-name"
               required
-              pattern="[A-Za-zÀ-ÿ\s\-]{2,}"
-              title="At least 2 letters"
             >
-          </div>
+          </label>
 
-          <div class="form-group">
-            <label for="org-title">Organizational Title <span aria-hidden="true">*</span></label>
+          <label>
+            Organizational Title
             <input
               type="text"
-              id="org-title"
-              name="orgTitle"
+              name="organization-title"
+              title="Enter your organizational title. Use at least seven letters, spaces, or hyphens."
               autocomplete="organization-title"
-              required
-              pattern="[A-Za-zÀ-ÿ\s\-]{7,}"
-              title="At least 7 characters"
+              pattern="[A-Za-z\s-]{7,}"
             >
-          </div>
+          </label>
 
-          <div class="form-group">
-            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+          <label>
+            Email Address
             <input
               type="email"
-              id="email"
               name="email"
+              title="Enter your email address"
               autocomplete="email"
+              placeholder="example@email.com"
               required
             >
-          </div>
+          </label>
 
-          <div class="form-group">
-            <label for="phone">Mobile Phone Number <span aria-hidden="true">*</span></label>
+          <label>
+            Mobile Phone Number
             <input
               type="tel"
-              id="phone"
               name="phone"
+              title="Enter your mobile phone number"
               autocomplete="tel"
               required
             >
-          </div>
+          </label>
 
-          <div class="form-group">
-            <label for="business-name">Business / Organization Name <span aria-hidden="true">*</span></label>
+          <label>
+            Business or Organization Name
             <input
               type="text"
-              id="business-name"
-              name="businessName"
+              name="organization"
+              title="Enter your business or organization name"
               autocomplete="organization"
               required
             >
-          </div>
+          </label>
 
-          <div class="form-group">
-            <label for="membership-level">Membership Level <span aria-hidden="true">*</span></label>
-            <select id="membership-level" name="membershipLevel" required>
-              <option value="" disabled selected>Select a level</option>
-              <option value="np">NP Membership (Non-Profit)</option>
-              <option value="bronze">Bronze Membership</option>
-              <option value="silver">Silver Membership</option>
-              <option value="gold">Gold Membership</option>
-            </select>
-          </div>
+          <fieldset>
+            <legend>Membership Level</legend>
 
-          <div class="form-group">
-            <label for="description">Business Description</label>
+            <label>
+              <input
+                type="radio"
+                name="membership"
+                value="np"
+                title="Select NP Membership"
+                required
+              >
+              NP Membership
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="membership"
+                value="bronze"
+                title="Select Bronze Membership"
+              >
+              Bronze Membership
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="membership"
+                value="silver"
+                title="Select Silver Membership"
+              >
+              Silver Membership
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="membership"
+                value="gold"
+                title="Select Gold Membership"
+              >
+              Gold Membership
+            </label>
+          </fieldset>
+
+          <label>
+            Business or Organization Description
             <textarea
-              id="description"
               name="description"
-              rows="4"
-              placeholder="Tell us briefly about your business or organization…"
+              title="Describe your business or organization"
+              rows="5"
             ></textarea>
-          </div>
+          </label>
 
-          <input type="hidden" id="timestamp" name="timestamp">
+          <input type="hidden" name="timestamp" id="timestamp">
 
-          <button type="submit" class="submit-button">Submit Application</button>
+          <input type="submit" value="Apply for Membership">
         </form>
       </section>
+
+      <section class="membership-section">
+        <h2>Membership Levels</h2>
+
+        <div class="membership-cards">
+          <article class="membership-card">
+            <h3>NP Membership</h3>
+            <p>For non-profit organizations. No fee.</p>
+            <button type="button" data-dialog="np-modal">Learn More</button>
+          </article>
+
+          <article class="membership-card">
+            <h3>Bronze Membership</h3>
+            <p>Basic benefits for small businesses.</p>
+            <button type="button" data-dialog="bronze-modal">Learn More</button>
+          </article>
+
+          <article class="membership-card">
+            <h3>Silver Membership</h3>
+            <p>Additional visibility and event benefits.</p>
+            <button type="button" data-dialog="silver-modal">Learn More</button>
+          </article>
+
+          <article class="membership-card">
+            <h3>Gold Membership</h3>
+            <p>Premium promotion and sponsorship benefits.</p>
+            <button type="button" data-dialog="gold-modal">Learn More</button>
+          </article>
+        </div>
+      </section>
     </div>
+
+    <dialog id="np-modal">
+      <h3>NP Membership Benefits</h3>
+      <p>This level is designed for non-profit organizations and has no fee.</p>
+      <ul>
+        <li>Basic directory listing</li>
+        <li>Community event invitations</li>
+        <li>Access to chamber newsletters</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal">
+      <h3>Bronze Membership Benefits</h3>
+      <p>This level is ideal for small businesses that want basic chamber visibility.</p>
+      <ul>
+        <li>Business directory listing</li>
+        <li>Networking event invitations</li>
+        <li>Member newsletter access</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal">
+      <h3>Silver Membership Benefits</h3>
+      <p>This level provides additional promotional opportunities and member discounts.</p>
+      <ul>
+        <li>Enhanced directory listing</li>
+        <li>Training event discounts</li>
+        <li>Social media promotion opportunities</li>
+        <li>Eligibility for homepage spotlight ads</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal">
+      <h3>Gold Membership Benefits</h3>
+      <p>This level is designed for organizations that want premium visibility and sponsorship opportunities.</p>
+      <ul>
+        <li>Premium directory listing</li>
+        <li>Priority homepage spotlight placement</li>
+        <li>Event sponsorship opportunities</li>
+        <li>Advertising opportunities</li>
+        <li>Discounted chamber luncheon access</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
   </main>
 
   <footer>
